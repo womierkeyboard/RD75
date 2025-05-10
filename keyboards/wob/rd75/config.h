@@ -16,6 +16,11 @@
  */
 #pragma once
 
+/* Size (in bytes) of the emulated EEPROM used by the custom driver. Required 
+ * since QMK assumes no default size when EEPROM_DRIVER=custom (inside rules.mk).
+ */
+#define EEPROM_SIZE 4096
+
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
