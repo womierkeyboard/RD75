@@ -4,7 +4,9 @@
 # Board: it should exist either in <chibios>/os/hal/boards/
 #  or <this_dir>/boards
 BOARD = FS026
-EEPROM_CUSTOM = custom
+EEPROM_DRIVER = custom
+RAW_ENABLE = yes
+DYNAMIC_KEYMAP_ENABLE = yes
 NO_USB_STARTUP_CHECK = yes
 BLUETOOTH_CUSTOM = yes
 
